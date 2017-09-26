@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f = "http://java.sun.com/jsf/core" 
+	xmlns:h="http://java.sun.com/jsf/html">
+<h:head>
+<meta charset="UTF-8"/>
+<title>Exercicio 4</title>
+</h:head>
+	<h:body>
+	<h:form>
+		<h:inputText id="txtOriginal" name="txtOriginal" value="#{formataValor.valor1}"/>
+		<h:commandButton id="btnFormatar" value="Formatar" action="#{formataValor.retornaValor}"/>
+		<br/>
+		<br/>
+		<h:outputText value="#{formataValor.valor2}"/>
+	</h:form>
+	</h:body>
+</html>

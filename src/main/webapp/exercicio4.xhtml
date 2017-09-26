@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f = "http://java.sun.com/jsf/core" 
+	xmlns:h="http://java.sun.com/jsf/html">
+<h:head>
+<meta charset="UTF-8"/>
+<title>Exercicio 4</title>
+</h:head>
+	<h:body>
+	<h:form>
+		<h:selectManyListbox value="#{listaDados.itens}">
+			<f:selectItem itemValue ="Paraná" itemLabel="Paraná"/>
+			<f:selectItem itemValue ="Santa Catarina" itemLabel="Santa Catarina"/>
+			<f:selectItem itemValue ="Rio Grande do Sul" itemLabel="Rio Grande do Sul"/>
+		</h:selectManyListbox>
+		<h:commandButton id="btnSubmit" value="Submit" action="#{listaDados.itensSelecionados}"/>
+		<h:outputLabel value="itens: #{listaDados.itens}"/>
+	</h:form>
+	</h:body>
+</html>

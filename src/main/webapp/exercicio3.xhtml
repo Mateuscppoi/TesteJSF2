@@ -7,8 +7,9 @@
 </h:head>
 	<h:body>
 	<h:form>
-		<h:selectBooleanCheckbox id="caixa" action="#{funcaoBotao.seiLa}"/>
-		<h:outputLabel value="que?: #{funcaoBotao.surpresa}"/>
+		<h:selectBooleanCheckbox value="#{funcaoBotao.botao}"/>
+		<h:commandButton id="btnSeiLa" value="Testa Ae" action="#{funcaoBotao.testaBotao}"/>
+		<h:outputLabel value="supresa = #{funcaoBotao.surpresa}" />
 	</h:form>
 	</h:body>
 </html>

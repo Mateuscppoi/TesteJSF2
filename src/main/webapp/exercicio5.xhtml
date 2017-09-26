@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f = "http://java.sun.com/jsf/core" 
+	xmlns:h="http://java.sun.com/jsf/html">
+<h:head>
+<meta charset="UTF-8"/>
+<title>Exercicio 3</title>
+</h:head>
+	<h:body>
+	<h:form>
+		<h:selectOneRadio value="#{listaRadios.radio}">
+			<f:selectItem itemValue ="Maringa FM - 97.1" itemLabel="Maringa FM - 97.1"/>
+			<f:selectItem itemValue ="Jovem Pan - 101.3" itemLabel="Jovem Pan - 101.3"/>
+			<f:selectItem itemValue ="Radio Mix - 97.9" itemLabel="Radio Mix - 97.9"/>
+		</h:selectOneRadio>
+		<br/>
+		<h:commandButton id="btnSubmit" value="Submit" action="#{listaRadios.radioSelecionada}"/>
+		<br/>
+		<br/>
+		<h:outputLabel value="Radio: #{listaRadios.radio}"/>
+	</h:form>
+	</h:body>
+</html>
