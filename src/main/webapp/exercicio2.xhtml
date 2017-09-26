@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html">
+<h:head>
+<meta charset="ISO-8859-1"/>
+<title>Exercicio 2</title>
+</h:head>
+	<h:body>
+	<h:form>
+		<h3>Digite uma palavra</h3>
+		<h:inputText name="txtOriginal" id="txtOriginal" value="#{converteTipoLetra.palavra1}" />
+		<h3>Converter para: </h3>
+		<h:commandButton id="btnMaiuscula" value="Maiuscula" action="#{converteTipoLetra.maiuscula()}"/>
+		<h:commandButton id="btnMinuscula" value="Minuscula" action="#{converteTipoLetra.minuscula()}"/>
+		<br/>
+		<h:outputLabel value="Conversao: #{converteTipoLetra.palavra2}"/>
+	</h:form>
+	</h:body>
+</html>

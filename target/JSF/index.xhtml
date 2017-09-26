@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html">
+<h:head>
+<meta charset="ISO-8859-1"/>
+<title>Exercicio 1</title>
+</h:head>
+<h:body>
+	<h:form>
+		<h3> Digite o primeiro numero</h3>
+		<h:inputText name="primeiroNumero" id="primeiroNumero" value="#{operacoes.numero1}" />
+		<br/>
+		<h3> Digite o segundo numero</h3>
+		<h:inputText name="segundoNumero" id="segundoNumero" value="#{operacoes.numero2}" />
+		<br/>
+		<h:commandButton id="btnSoma" value="Somar" action="#{operacoes.soma}"/>
+		<br/>
+		<h:commandButton id="btnSubtrae" value="Subtrair" action="#{operacoes.subtracao}"/>
+		<br/>
+		<h:commandButton id="btnMultiplica" value="Multiplicar" action="#{operacoes.multiplicacao}"/>
+		<br/>
+		<h:commandButton id="btnDivide" value="Dividir" action="#{operacoes.divisao}"/>
+		<br/>
+		<h:outputLabel value="Resultado: #{operacoes.resultado}"/>
+	</h:form>
+</h:body>
+</html>
